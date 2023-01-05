@@ -16,16 +16,41 @@
     --White: hsl(0, 0%, 100%);
 }
 
+/*1rem=16px*/
+/* *{
+    box-sizing: content-box;
+} */
 
 body{
     font-family: 'Outfit', sans-serif;
     font-size: 62.5%; /* 16px * 0.625 = 10px; */
+    background-color: var(--Very-dark-blue-main-BG);
+
+     /*Con las siguientes propiedades se da en body
+     para que los elementos que lo componen se ubiquen
+     en todo el centro de la pantalla*/
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;    
 }
 
 p{
     font-size: 1.8rem;
 }
 
+.container{
+    
+   
+
+    /*Estilos de fondo*/
+    background-color: var(--Very-dark-blue-card-BG);
+
+    /*Tamaño de la tarjeta*/
+    width: 10rem; /* 15rem = 15*16px = 240px*/
+    height:10rem;
+
+}
 
 
 
