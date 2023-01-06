@@ -4,15 +4,16 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
 :root{
     --Soft-blue: hsl(215, 51%, 70%);
-    --Cyan: hsl(178, 100%, 50%);  
+    --Cyan: hsl(178, 100%, 50%);
     --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
     --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
-    --Very-dark-blue-line-: hsl(215, 32%, 27%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
 }
 
@@ -25,34 +26,71 @@ body{
     font-family: 'Outfit', sans-serif;
     font-size: 62.5%; /* 16px * 0.625 = 10px; */
     background-color: var(--Very-dark-blue-main-BG);
-
-     /*Con las siguientes propiedades se da en body
-     para que los elementos que lo componen se ubiquen
-     en todo el centro de la pantalla*/
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     min-height: 100vh;    
 }
 
 p{
     font-size: 1.8rem;
 }
 
-.container{
-    
-   
+.main-container{
 
-    /*Estilos de fondo*/
+/*Con las siguientes propiedades se da en body
+    para que los elementos que lo componen se ubiquen
+    en todo el centro de la pantalla*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.second-container{
     background-color: var(--Very-dark-blue-card-BG);
-
-    /*Tamaño de la tarjeta*/
-    width: 10rem; /* 15rem = 15*16px = 240px*/
-    height:10rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
 
 }
 
+.contenedor-imagen{
+    /*position: relative;*/
+}
 
+.main-image{
+    background-image: url(images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    min-height: 18.75rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+.texto-principal h1 a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+.texto-principal p{
+    text-decoration: none;
+    color: var(--Soft-blue);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--Soft-blue);
+}
+
+.linea{
+    border: 1px solid var(--Very-dark-blue-line);
+    opacity: 0.5;
+}
+
+.autor{
+    color: var(--Soft-blue);
+}
 
 
 
@@ -70,9 +108,9 @@ p{
 
 
 .attribution {
-     font-size: 11px; 
+     font-size: 11px;
     text-align: center; }
 
 .attribution a {
-     color: hsl(228, 45%, 44%); 
+     color: hsl(228, 45%, 44%);
     }
