@@ -24,7 +24,7 @@
 
 body{
     font-family: 'Outfit', sans-serif;
-    font-size: 62.5%; /* 16px * 0.625 = 10px; */
+    /*font-size: 62.5%; /* 16px * 0.625 = 10px;*/
     background-color: var(--Very-dark-blue-main-BG);
 }
 
@@ -47,11 +47,16 @@ p{
     background-color: var(--Very-dark-blue-card-BG);
     border-radius: 1rem;
     padding: 1.5rem;
+    max-width: 21.8rem;
+
 
 }
 
 .contenedor-imagen{
     /*position: relative;*/
+    width: 100%;
+    max-width: 18.75rem;
+    cursor: pointer;
 }
 
 .main-image{
@@ -60,16 +65,39 @@ p{
     background-position: center center;
     background-size: cover;
     height: 100%;
-    min-height: 18.75rem;
     width: 100%;
+    min-height: 18.75rem;
+
     border-radius: 1rem;
+}
+
+
+.effect-image{
+    background-image: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 18.75rem;
+    border-radius: 1rem;
+}
+
+
+.texto-principal{
+    margin: 1.5rem 0 2rem 0;
+
 }
 .texto-principal h1 a{
     text-decoration: none;
     color: var(--White);
+    font-size: 1.5rem;
+
 }
 
+.texto-principal h1 a:hover{
+    color: var(--Cyan);
+}
 .texto-principal p{
+    margin: 1rem 0 1rem 0;
     text-decoration: none;
     color: var(--Soft-blue);
     font-size: 1.1rem;
@@ -81,6 +109,45 @@ p{
     flex-direction: row;
     justify-content: space-between;
     color: var(--Soft-blue);
+    margin-bottom:1.2rem;
+    margin-top: 1rem;
+}
+
+
+.pricing{
+    color:var(--Cyan);
+    display: flex;
+    font-weight: 600;
+}
+
+.pricing-p{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.pricing-img{
+    background-image: url(images/icon-ethereum.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+.timing{
+    display: flex;
+    font-weight: 600;
+}
+
+.timing-p{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.timing-img{
+    background-image: url(images/icon-clock.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 1.3rem;
+    min-width: 1.3rem;
 }
 
 .linea{
@@ -89,7 +156,35 @@ p{
 }
 
 .autor{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.autor p{
     color: var(--Soft-blue);
+    font-size: 1rem;
+}
+
+.autor p a{
+    color: var(--White);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+.author-name:hover{
+    color: var(--Cyan);
+}
+
+.avatar{
+    width: 10%;
+    height: 10%;
+    background-size: cover;
+    border: 0.0625rem solid var(--White);
+    border-radius: 50%;
 }
 
 
