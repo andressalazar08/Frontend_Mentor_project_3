@@ -17,10 +17,6 @@
     --White: hsl(0, 0%, 100%);
 }
 
-/*1rem=16px*/
-/* *{
-    box-sizing: content-box;
-} */
 
 body{
     font-family: 'Outfit', sans-serif;
@@ -48,12 +44,10 @@ p{
     border-radius: 1rem;
     padding: 1.5rem;
     max-width: 21.8rem;
-
-
 }
 
 .contenedor-imagen{
-    /*position: relative;*/
+    position: relative;
     width: 100%;
     max-width: 18.75rem;
     cursor: pointer;
@@ -67,24 +61,32 @@ p{
     height: 100%;
     width: 100%;
     min-height: 18.75rem;
-
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 
 .effect-image{
-    background-image: none;
     position: absolute;
     top: 0;
     width: 100%;
     min-height: 18.75rem;
-    border-radius: 1rem;
+    height: auto;
+    background-image: none;
+    border-radius: 0.5rem;
 }
 
+.effect-image:hover{
+    background-image: url("images/icon-view.svg");
+    background-color: var(--Cyan);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20% 20%;
+    opacity: 0.5;
+    transition: background-color ease-in-out 0.3s;
+}
 
 .texto-principal{
     margin: 1.5rem 0 2rem 0;
-
 }
 .texto-principal h1 a{
     text-decoration: none;
@@ -188,24 +190,20 @@ p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 600px) {
+    .main-container {
+    margin-top: 3.75rem;
+    }
+}
 
 
 .attribution {
-     font-size: 11px;
-    text-align: center; }
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+}
 
 .attribution a {
-     color: hsl(228, 45%, 44%);
+    color: hsl(228, 45%, 44%);
     }
+
